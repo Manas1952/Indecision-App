@@ -4,6 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 
 module.exports = (env) => {
+  console.log(env)
   const CSSExtract = new ExtractTextPlugin('styles.css')
   const isProduction = env === 'production'
   return {
