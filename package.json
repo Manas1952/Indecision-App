@@ -6,7 +6,8 @@
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "herkoku-postbuild": "npm run build"
   },
   "author": "Manas Purohit",
   "license": "ISC",
@@ -18,6 +19,8 @@
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.4",
+    "express": "^4.17.2",
+    "extract-text-webpack-plugin": "^3.0.0",
     "live-server": "^1.2.1",
     "node-sass": "^6.0.1",
     "normalize.css": "^7.0.0",
